@@ -4,4 +4,5 @@ for i in ${mounts[@]}; do
   echo For $i run dedupe and remove empty directories
   rclone dedupe largest $i -v
   rclone rmdirs $i -v
+  rclone cleanup $i -v
 done

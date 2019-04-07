@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+#     #!/bin/bash
 readarray mounts < <( rclone listremotes )
 for i in ${mounts[@]}; do
   echo For $i run dedupe and remove empty directories

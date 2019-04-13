@@ -1,5 +1,9 @@
 # cleanremotes
 
-Runs rclone listremotes and for each remote runs rclone dedupe (eliminate exact dupes) and rclone rmdirs (delete empty directories).
+Runs rclone listremotes and for each remote runs 
 
-Add a hash # at the beginning of the rclone dedupe or rmdirs line if you only want to run one, not both.
+rclone dedupe (eliminate exact dupes) 
+rclone rmdirs (delete empty directories)
+#rclone delete source --drive-trashed-only --drive-use-trash=false -v (permanently deletes all trash - be very careful with this)
+
+Add a hash # at the beginning of any line you wish to omit

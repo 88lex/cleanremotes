@@ -5,6 +5,6 @@ for i in ${mounts[@]}; do
   echo For $i run dedupe and remove empty directories
   rclone dedupe largest $i -v                                       #removes exact duplicate files
   rclone rmdirs $i -v                                               #removes empty directories
-  rclone delete $i --drive-trashed-only --drive-use-trash=false -v  #permanently deletes trash - be careful
+  rclone delete $i --fast-list --drive-trashed-only --drive-use-trash=false -v --transfers 30 --checkers 30   #permanently deletes trash - be careful
   #rclone cleanup $i -v                                              #deletes trash and cleans up drive cache files. May not work
 done

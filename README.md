@@ -1,10 +1,13 @@
 # cleanremotes
 
-Runs rclone listremotes. Then for every remote that is configured in rclone 
-the script runs the following commands:
-
 BE SURE THAT YOU WANT TO RUN THESE COMMANDS FOR EVERY REMOTE. IF NOT THEN EDIT THE
 SCRIPT TO RUN IT FOR ONE/SEVERAL REMOTES.
+
+In order to permanently delete items from Trash you need to have Manager permissions on the 
+Team Drive.  Content Manager and below cannot permanently delete Trash.
+
+This script first runs rclone listremotes. Then for every remote that is configured in rclone 
+the script runs the following commands:
 
 rclone dedupe (eliminates exact duplicates)
 

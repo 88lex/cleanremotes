@@ -1,6 +1,10 @@
 # cleanremotes
 
-Runs rclone listremotes. Then for each remote the script runs the following commands:
+Runs rclone listremotes. Then for every remote that is configured in rclone 
+the script runs the following commands:
+
+BE SURE THAT YOU WANT TO RUN THESE COMMANDS FOR EVERY REMOTE. IF NOT THEN EDIT THE
+SCRIPT TO RUN IT FOR ONE/SEVERAL REMOTES.
 
 rclone dedupe (eliminates exact duplicates)
 

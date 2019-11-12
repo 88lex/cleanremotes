@@ -1,7 +1,7 @@
 # cleanremotes
 
-BE SURE THAT YOU WANT TO RUN THESE COMMANDS FOR EVERY REMOTE. IF NOT THEN EDIT THE
-SCRIPT TO RUN IT FOR ONE/SEVERAL REMOTES.
+cleanremotes accepts a command line filter now.  e.g. `./cleanremotes tv` will
+only clean remotes that have `tv` in them
 
 In order to permanently delete items from Trash you need to have Manager permissions on the 
 Team Drive.  Content Manager and below cannot permanently delete Trash.
